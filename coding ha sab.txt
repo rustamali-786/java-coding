@@ -245,3 +245,113 @@
 //}
 //// Q. Take Positive integer input and tell if it is a three digit
 ////   number or not.
+// import java.util.Scanner;
+// public class aahil{
+//  public static void main(String[]args){
+//   Scanner sc =  new Scanner (System.in);
+//   System.out.println("Enter here thre digit number :");
+//   int n = sc.nextInt();
+//   if(n>99 && n<1000){
+//    System.out.println("This is a three digit number ");
+//   }
+//   else{
+//    System.out.println("this is not three digit number");
+//   }
+//  }
+// }
+//// Q. Take integer Input &tell if it is a2 digit number.
+
+//import java.util.Scanner;
+//public class aahil{
+// public static void main(String[]args){
+//  Scanner sc = new Scanner(System.in);
+//  System.out.println("Enter a Digit number : ");
+//  int n = sc.nextInt();
+//  if(n>9 && n<100) {
+//   System.out.println("This is a two digit number ");
+//  }
+//  else{
+//    System.out.println("This is not a two digit number ");
+//   }
+//  }
+// }
+//// Q. Take positive integer input and tell if it is divisible by 3 and 5.
+//import java.util.Scanner;
+//public class aahil {
+// public static void main(String[] args) {
+//  Scanner sc = new Scanner(System.in);
+//  System.out.println("Enter a Number : ");
+//  int n = sc.nextInt();
+//  if (n % 3 == 0 && n % 5 == 0) {
+//   System.out.println("this is divisible by 3 and 5");
+//  } else {
+//   System.out.println("this is not divisible by 3 and 5 ");
+//  }
+// }
+//}
+//// Q. Take 3 positive integers input and print the greatest of them.
+//import java.util.Scanner;
+//public class aahil{
+// public static void main(String[]args){
+//  Scanner sc = new Scanner(System.in);
+//  System.out.print("Enter here first number : ");
+//  int a = sc.nextInt();
+//  System.out.print("Enter here Second number : ");
+//  int b = sc.nextInt();
+//  System.out.print("Enter here third number : ");
+//  int c = sc.nextInt();
+//  if(a>b && a>c){
+//   System.out.println(a+" is largest");
+//  }
+// else if(b>a && b>c){
+//   System.out.println(b+" is largest");
+//  }
+//  else{
+//   System.out.println(c+" is largest");
+//  }
+// }
+//}
+//// Q. if the ages of ram,shyam and ajay are input through the
+////   the keyvoard,WAP to determine the youngest of the three.
+//import java.util.Scanner;
+//public class aahil{
+// public static void main(String[]args) {
+//  Scanner sc = new Scanner(System.in);
+//  System.out.print("Enter here age of Ram : ");
+//  int ram = sc.nextInt();
+//  System.out.print("Enter here age of Shyam : ");
+//  int shyam = sc.nextInt();
+//  System.out.print("Enter here age of Ajay : ");
+//  int ajay = sc.nextInt();
+//  if(ram>shyam && ram>ajay){
+//   System.out.println(ram+" Ram is youngest");
+//  }
+//  else if(shyam>ram && shyam>ajay){
+//   System.out.println(shyam+" Shyam is youngest");
+//  }
+//  else{
+//   System.out.println(ajay+" Ajay is youngest");
+//  }
+//
+// }
+//}
+//// Q. take 3 numbers input and tell if they can be the sides of a triangle.
+import java.util.Scanner;
+public class aahil{
+ public static void main(String[]args){
+  Scanner sc = new Scanner (System.in);
+  System.out.print(" Enter first side : ");
+  int a = sc.nextInt();
+  System.out.print("Enter Second side : ");
+  int b = sc.nextInt();
+  System.out.print("Enter third Side : ");
+  int c = sc.nextInt();
+ if(a+b>c && b+c>a && c+a>b){
+  System.out.println("Valid triangle");
+ }
+ else{
+  System.out.println("invalid triangle");
+ }
+
+ }
+}
