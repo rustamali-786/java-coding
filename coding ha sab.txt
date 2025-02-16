@@ -144,24 +144,351 @@
 
  ////  Q. If cost price and selling price of an iteam is input through the keyboard WAP to determine whether the seller
  ////  has made profit or incurred loss. Also determine how much profit he made or loss he incurred.
+//
+//import java.sql.SQLOutput;
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//          System.out.print("Enter cost Price ");
+//          int cp = sc.nextInt();
+//          System.out.print("Enter selling price ");
+//          int sp = sc.nextInt();
+//          if(sp>cp){
+//              System.out.print(" your profit is ");
+//              System.out.print(sp-cp);
+//          }
+//          else{
+//              System.out.print("your loss is ");
+//              System.out.println(cp-sp);
+//
+//              }
+//
+//    }
+//}
 
-import java.sql.SQLOutput;
-import java.util.Scanner;
-public class aahil{
-    public static void main(String[]args){
-        Scanner sc = new Scanner(System.in);
-          System.out.print("Enter cost Price ");
-          int cp = sc.nextInt();
-          System.out.print("Enter selling price ");
-          int sp = sc.nextInt();
-          if(sp>cp){
-              System.out.print(" your profit is ");
-              System.out.print(sp-cp);
-          }
-          else{
-              System.out.print("your loss is ");
-              System.out.println(cp-sp);
+//// Q. Given the length and breadth of  a rectingle WAP to find whether the area of the
+////      rectungle is greater than its perimeter.
 
-              }
+//  import java.util.Scanner;
+//  public class aahil{
+//      public static void main(String[]args){
+//          Scanner sc =  new Scanner(System.in);
+//          System.out.print("Enter here length :");
+//          int length = sc.nextInt();
+//          System.out.print("Enter here breadth :");
+//          int breadth = sc.nextInt();
+//          int Area = length * breadth;
+//          int perimeter = 2 * (length + breadth);
+//          if(Area>perimeter){
+//              System.out.println("Area greather than perimeter");
+//           }
+//       else{
+//              System.out.println("perimeter is greater than Area");
+//          }
+//      }
+//}
+////   Q. input length,breadth,Square or Not.
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter here length :");
+//        int length = sc.nextInt();
+//        System.out.println("Enter here breadth");
+//        int breadth = sc.nextInt();
+//        if(length==breadth){
+//            System.out.println("yes square");
+//
+//        }
+//        else{
+//            System.out.println("not square");
+//        }
+//    }
+//}
+//// Q. Take Input oercentge of a student and print the grade according to marks.
+//// 1. 90_100 Excellent
+//// 2. 80_90 very Good
+//// 3. 70_80 good
+//// 4. 60_70 can do better
+//// 5. 50_60 Average
+//// 6. 40_50 Bellow Averagew
+//// 7. <40 fail
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter Percentage :");
+//        int n = sc.nextInt();
+//        if(n>90){
+//            System.out.print("Excellent ");
+//        }
+//        else if(n>80){
+//            System.out.println("Very Good");
+//        }
+//        else if(n>70){
+//            System.out.println("Good");
+//        }
+//        else if(n>60){
+//            System.out.println("Can do better");
+//        }
+//        else if(n>50){
+//            System.out.println("Average");
+//        }
+//        else if(n>40){
+//            System.out.println("bellow Average");
+//        }
+//        else{
+//            System.out.println("Fail");
+//        }
+//    }
+//}
+//// Q. Take Positive integer input and tell if it is a three digit
+////   number or not.
+// import java.util.Scanner;
+//public class aahil {
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Eter Radius here ");
+//        double radius = sc.nextDouble();
+//        double pi = 3.1415;
+//        double area = pi * radius * radius;
+//        System.out.println("The area of circle is "+area);
+//    }
+//}
+//
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter First Number ");
+//        int x = sc.nextInt();
+//        System.out.print("Enter Second Number ");
+//        int y = sc.nextInt();
+//     int sum = x + y;
+//        System.out.println("The Addiition is "+sum);
+//    }
+//}
+//public class aahil {
+//    public static void main(String[] args) {
+//        int x = 10, y = 2;
+//        System.out.println(y+x);
+//        System.out.println(x-y);
+//        System.out.println(x*y);
+//        System.out.println(x/y);
+//        System.out.println(x%y);
+//    }
+//}
+//public class aahil{
+//    public static void main(String[] args) {
+//        int x = 6,y = 9;
+//        System.out.println(x ==y); //false
+//       System.out.println(x!=y); // true
+//        System.out.println(x>y); // false
+//        System.out.println(x>=y); //false
+//        System.out.println(x<y); //true
+//        System.out.println(x<=y); // true
+//
+//    }
+//}
+//
+//public class aahil {
+//    public static void main(String[]args){
+//        int x = 15,y = 10,z = 5;
+//
+//        //  LOGICAL AND GATE(&&) AND GATE KA KAM HOTA HA KI AGAR DONO TRUE HA TAB TRUE DEGA
+//        //OUTPUT ME AGAR USME SE KOI AGAR FALSE HOGA TO OUTPUT FALSE HOGA
+//
+//        System.out.println((x > y) && (y>z)); // true
+//        System.out.println((x<y) && (y>z)); // false
+//
+//
+//        // LOGICAL OR GATE (//) OR GATE KA KAM HOTA HA KI AGAR DONO ME SE KOI EAK AGAR SAHI
+//        // HA TO OUTPUT TRUE DEGA
+//
+//        System.out.println((x < y) || (y>z) ); //true
+//        System.out.println((x>y) || (y<z)); // true
+//        System.out.println((x==y) || (y<z)); // false
+//
+//        // NOT(!) SYMBOL NOT GATE OUTPUT KP REVERSE KAR DETA HA YE SAHI LO GALAT KAR DETA HA
+//        // AUR GALAT KO SAHI KAR DETA HA
+//
+//        System.out.println(!(x == y)); //true
+//        System.out.println(!(x>y)); //false
+//        System.out.println(!(x<y)); //true
+//
+//    }
+// }
+//
+//         Contitional Statement
+//
+//                Even Odd
+//
+//import java.util.Scanner;
+//public class aahil {
+//   public static void main(String[]args){
+//       Scanner sc = new Scanner(System.in);
+//       System.out.print("Enter A Number ");
+//       int n = sc.nextInt();
+//       if(n%2==0){
+//           System.out.println("The Number Is Even");
+//       }
+//       if(n%2!=0){
+//           System.out.println("The Number Is odd");
+//       }
+//   }
+//}
+//             Divisible By 5
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter A Number  ");
+//        int n = sc.nextInt();
+//        if(n%5==0){
+//            System.out.println("yes It Is Divisible by 5");
+//        }
+//        else{
+//            System.out.println("No It Is Not Divisible by 5");
+//        }
+//    }
+//}
+//
+//
+//                Leap Year
+//
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter A Year ");
+//        int n = sc.nextInt();
+//        if((n % 4 == 0 && n % 100 != 0) || (n % 4 == 400) ){
+//            System.out.println("This is Leap Year");
+//        }
+//        else{
+//            System.out.println("This Is Not Leap Year");
+//        }
+//    }
+//}
+//// Q Take Integer input And print The Absolute Value Of that Integer.
+//
+//import java .util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Inter A Integer Number ");
+//        int n = sc.nextInt();
+//if(n<0){
+//    n = n * (-1);
+//}
+//        System.out.println("The Absolute Value Is " +n);
+//
+//
+//    }
+//}
+               /// /profit loss
 
-    }
+ ////  Q. If cost price and selling price of an iteam is input through the keyboard WAP to determine whether the seller
+ ////  has made profit or incurred loss. Also determine how much profit he made or loss he incurred.
+//
+//import java.sql.SQLOutput;
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//          System.out.print("Enter cost Price ");
+//          int cp = sc.nextInt();
+//          System.out.print("Enter selling price ");
+//          int sp = sc.nextInt();
+//          if(sp>cp){
+//              System.out.print(" your profit is ");
+//              System.out.print(sp-cp);
+//          }
+//          else{
+//              System.out.print("your loss is ");
+//              System.out.println(cp-sp);
+//
+//              }
+//
+//    }
+//}
+
+//// Q. Given the length and breadth of  a rectingle WAP to find whether the area of the
+////      rectungle is greater than its perimeter.
+
+//  import java.util.Scanner;
+//  public class aahil{
+//      public static void main(String[]args){
+//          Scanner sc =  new Scanner(System.in);
+//          System.out.print("Enter here length :");
+//          int length = sc.nextInt();
+//          System.out.print("Enter here breadth :");
+//          int breadth = sc.nextInt();
+//          int Area = length * breadth;
+//          int perimeter = 2 * (length + breadth);
+//          if(Area>perimeter){
+//              System.out.println("Area greather than perimeter");
+//           }
+//       else{
+//              System.out.println("perimeter is greater than Area");
+//          }
+//      }
+//}
+////   Q. input length,breadth,Square or Not.
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter here length :");
+//        int length = sc.nextInt();
+//        System.out.println("Enter here breadth");
+//        int breadth = sc.nextInt();
+//        if(length==breadth){
+//            System.out.println("yes square");
+//
+//        }
+//        else{
+//            System.out.println("not square");
+//        }
+//    }
+//}
+//// Q. Take Input oercentge of a student and print the grade according to marks.
+//// 1. 90_100 Excellent
+//// 2. 80_90 very Good
+//// 3. 70_80 good
+//// 4. 60_70 can do better
+//// 5. 50_60 Average
+//// 6. 40_50 Bellow Averagew
+//// 7. <40 fail
+//import java.util.Scanner;
+//public class aahil{
+//    public static void main(String[]args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter Percentage :");
+//        int n = sc.nextInt();
+//        if(n>90){
+//            System.out.print("Excellent ");
+//        }
+//        else if(n>80){
+//            System.out.println("Very Good");
+//        }
+//        else if(n>70){
+//            System.out.println("Good");
+//        }
+//        else if(n>60){
+//            System.out.println("Can do better");
+//        }
+//        else if(n>50){
+//            System.out.println("Average");
+//        }
+//        else if(n>40){
+//            System.out.println("bellow Average");
+//        }
+//        else{
+//            System.out.println("Fail");
+//        }
+//    }
+//}
+//// Q. Take Positive integer input and tell if it is a three digit
+////   number or not.
