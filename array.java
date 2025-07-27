@@ -537,24 +537,96 @@ public class array {
     }
 }
 
+*/
 
- */
+
+/* Q17.rotate the given array a by k steps where k is non negative without using extra space.
+Note k can be greater than n as well.
+
+
+import java.util.Scanner;
+public class array{
+    public static void swap(int [] arr, int i, int j) {
+        while (i < j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    }
+
+      public static void rotate(int []arr,int k){
+        int n = arr.length;
+        k = k % n;
+          swap(arr,0,n -k- 1);
+          swap(arr,n - k, n -1);
+          swap(arr,0, n -1);
+        }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter array size ");
+        int n = sc.nextInt();
+        int [] arr = new int [n];
+        System.out.println("Enter element ");
+        for(int i = 0; i < n; i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Enter k = ");
+        int k = sc.nextInt();
+          rotate(arr,k);
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+*/
+
 
 /*
-Q17.rotate the given array a by k steps where k is non negative without using extra space.
-Note k can be greater than n as well.
- */
+Q17. Given Q quries check if the given number i present in the array or not
+Note=> Value of all the elements in the array is less than 10 to the power 5.
 
 
+import java.util.Scanner;
+public class array {
+    public static int[] makefrqarr(int[] arr) {
+        int[] freq = new int[100005];
+        for (int i = 0; i < arr.length; i++) {
+            freq[arr[i]]++;
+        }
+        return freq;
+    }
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter array size:");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter element: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int[] freq = makefrqarr(arr);
+        System.out.println("Enter number of Quires : ");
+        int q = sc.nextInt();
+        while (q > 0) {
+            System.out.println("Enter number two be searched: ");
+            int x = sc.nextInt();
+            if (freq[x] > 0) {
+                System.out.println("Yes ");
+            } else {
+                System.out.println("No");
+            }
 
+        q--;
+    }
+}
 
-
-
-
-
-
-
+}
+*/
 
 
 
@@ -597,17 +669,3 @@ Note k can be greater than n as well.
 
 
 
-
-
-
-// ................Array manipulation.............
-// Q.Find the unique number in a given Array where all elements are being repeated
-//  twice with one being unique.
-
-//public class array{
-//    public static int repeated(int arr){
-//        int check = 1;
-//        for(int i = 0; i < arr.length)
-//    }
-//}
-//
