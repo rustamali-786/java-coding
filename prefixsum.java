@@ -37,9 +37,9 @@ public class prefixsum {
 
     }
 }
+*/
 
 
- */
 
 //                   without creating a new array.(aproach 2)
 /*
@@ -112,3 +112,51 @@ public class prefixsum{
     }
 
 */
+
+
+/*
+Q3. Check if we can partition the array into two subarrays with equal sum.More formally,check that the prefix sum
+of a part of the array is equal to the suffix sum of rest of the array.
+ */
+
+
+/*
+import java.util.Scanner;
+public class prefixsum {
+    public static int printtotalsumarray(int [] arr){
+        int totalsum = 0;
+        for(int i = 0; i < arr.length;i++){
+            totalsum += arr[i];
+        }
+        return totalsum;
+    }
+    public static  boolean prefixSum(int [] arr){
+        int n = arr.length;
+       int totalsum =  printtotalsumarray(arr);
+        int psum = 0;
+        for(int i = 0; i < n; i++){
+            psum += arr[i];
+            int ssum = totalsum -psum;
+            if( psum == ssum){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter array size:");
+        int n = sc.nextInt();
+        int [] arr = new int [n];
+        System.out.println("Enter element: ");
+        for(int i = 0; i < arr.length;i++){
+            arr[i] = sc.nextInt();
+        }
+         boolean   ans = prefixSum(arr);
+        System.out.println( "prefix sum is "+ans);
+
+    }
+}
+
+ */
+
