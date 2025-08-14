@@ -1,7 +1,6 @@
 /*
 Q1. Sum of Matrix.
  */
-
 /*
 import java.util.Scanner;
 public class TwoDArray {
@@ -67,6 +66,7 @@ Q2. Write a program to display multiplication of two matrices entered by the use
  */
 
 /*
+
 import java.util.Scanner;
 public class TwoDArray {
     static void printarray(int [][] matrix){
@@ -129,7 +129,7 @@ public class TwoDArray {
  */
 
 /*
-Q. WAP to display transpose of matrix entered by the user.( with new array banakr)
+Q3. WAP to display transpose of matrix entered by the user.( with new array banakr)
  */
 
 
@@ -180,7 +180,7 @@ public class TwoDArray{
 
 
 /*
-Q. WAP to display transpose of matrix entered by the user.( without new array banakr)
+Q4. WAP to display transpose of matrix entered by the user.( without new array banakr)
 
  */
 
@@ -230,7 +230,7 @@ public class TwoDArray{
  */
 
 /*
-Q. Give a square matrix , turn it by 90 degrees in a clockwise diresction without using any extra space.
+Q5. Give a square matrix , turn it by 90 degrees in a clockwise diresction without using any extra space.
  */
 
 /*
@@ -296,7 +296,7 @@ public class TwoDArray{
  */
 
 /*
-Q. Given an integers n return the first n rows of pascals tringle.
+Q6. Given an integers n return the first n rows of pascals tringle.
 in pascal tringle each number is the sum of two numbers directly.
  */
 
@@ -337,7 +337,7 @@ public class TwoDArray{
 
 
 /*
-Q.print matrix in spiral order.
+Q7.print matrix in spiral order.
 
 1  2  3  4
 12 13 14 5
@@ -417,7 +417,7 @@ public class TwoDArray {
 
 
 /*
-Q. given a positive integers n, generate an n * n matrix fikked with elements from 1 to n^2 in spirial order.
+Q8. given a positive integers n, generate an n * n matrix fikked with elements from 1 to n^2 in spirial order.
  */
 
 /*
@@ -483,8 +483,8 @@ public class TwoDArray {
 */
 
 /*
-Given a matix a of dimension n * m and 2 coordinates (l1, r1) and (l2, r2).
-return the sum of the rectungle from (l1, r1) to (l2, r2).
+Q9.Given a matix a of dimension n * m and 2 coordinates (l1, r1) and (l2, r2).
+return the sum of the rectungle from (l1, r1) to (l2, r2). thhis method is brute force
  */
 /*
 import java.util.Scanner;
@@ -524,7 +524,7 @@ public class TwoDArray {
 
 
 /*
-Q. precalculating the horizontal sum each row in the matrix. method 2
+Q10. precalculating the horizontal sum each row in the matrix. method 2
 
  */
 
@@ -582,8 +582,8 @@ public class TwoDArray {
         int r1 = sc.nextInt();
         int l2 = sc.nextInt();
         int r2 = sc.nextInt();
-        System.out.println("Rectangle sum method 1 => " + findsum(matrix,l1,r1,l1,r2));
-        System.out.println("Rectangle sum of method 2 => " + findsum2(matrix,l1,r1,l1,r2));
+        System.out.println("Rectangle sum method 1 => " + findsum(matrix,l1,r1,l2,r2));
+        System.out.println("Rectangle sum of method 2 => " + findsum2(matrix,l1,r1,l2,r2));
 
     }
 }
@@ -593,9 +593,11 @@ public class TwoDArray {
 
 
 /*
-Q. precalculating the horizontal sum each row in the matrix. method 3
+Q11. precalculating the horizontal sum each row in the matrix. method 3 alternating method 
  */
+
 /*
+
 import java.util.Scanner;
 public class TwoDArray {
     static int findsum(int [][] matrix , int l1, int r1, int l2, int r2){
@@ -624,19 +626,7 @@ public class TwoDArray {
             }
         }
     }
-    public static int findsum2(int [][] matrix , int l1, int r1, int l2, int r2){
-        int sum = 0;
-        findprefixsummatrix(matrix);
-        for(int i = l1; i <= l2; i++) {
-            if (r1 >= 1) {
-                sum += matrix[i][r2] - matrix[i][r1 - 1];
-            }
-            else{
-                sum += matrix[i][r2];
-            }
-        }
-        return sum;
-    }
+
     public static int findsum3(int [][] matrix , int l1, int r1, int l2, int r2) {
        int ans = 0;
        int sum = 0 , up = 0, left = 0, leftup = 0;
@@ -673,63 +663,10 @@ public class TwoDArray {
         int r1 = sc.nextInt();
         int l2 = sc.nextInt();
         int r2 = sc.nextInt();
-        System.out.println("Rectangle sum method 1 => " + findsum(matrix,l1,r1,l1,r2));
-        System.out.println("Rectangle sum of method 3 => " + findsum3(matrix,l1,r1,l1,r2));
+        System.out.println("Rectangle sum method 1 => " + findsum(matrix,l1,r1,l2,r2));
+        System.out.println("Rectangle sum of method 3 => " + findsum3(matrix,l1,r1,l2,r2));
 
     }
 }
 
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
