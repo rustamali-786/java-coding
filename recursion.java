@@ -337,7 +337,7 @@ public class basic {
 /*
         linear search using recursion.
  */
-
+/*
 public class recursion {
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5,6,7,8,9};
@@ -350,13 +350,106 @@ public class recursion {
         return src(arr,target,index+1);
     }
 }
+ */
 
+/*
+Q. print array using recursion
+ */
+/*
+public class recursion {
+    public static void main(String[] args) {
+        int [] arr = {1,2,3,4,5,6,7,800};
+        printarr(arr,0);
+    }
+    public static void printarr(int [] arr, int indx){
+        if(indx == arr.length) return;
+        System.out.println(arr[indx]);
+        printarr(arr,indx+1);
+    }
+}
 
+ */
 
+/*
+Q. Binary search using recursion.
+ */
+/*
+public class recursion {
+    public static void main(String[] args) {
+        int [] arr = {1,2,3,4,5,6,7};
+        int target = 6;
+        System.out.println(search(arr,target));
+    }
+    public static int helper(int [] nums, int target, int low,int high) {
+        while (low  >high) return -1;
+        int mid = low + (high - low) / 2;
+            if (nums[mid] == target) return mid;
+            else if (nums[mid] > target) return helper(nums, target, low, mid - 1);
+            else return helper(nums, target, mid + 1, high);
+    }
+    public  static int search(int []nums, int target){
+        int n = nums.length;
+        return helper(nums,target,0,n-1);
+    }
+}
 
+ */
 
+/*
+Q. power set.
+ */
+/*
+public class recursion {
+    public static void main(String[] args) {
+        String s = "abc";
+        subset("",s,0);
+    }
+    public static void subset(String ans,String s, int indx){
+        if(indx == s.length()){
+            System.out.print(ans+" ");
+            return;
+        }
+        char ch = s.charAt(indx);
+        subset(ans+ch,s,indx+1);
+        subset(ans,s,indx+1);
+    }
+}
 
+ */
 
+/*
+public class recursion {
+    public static void main(String[] args) {
+        pip(2);
+    }
+    public static void pip(int n){
+        if(n == 0) return;
+        System.out.print(n+" ");
+        pip(n-1);
+        System.out.print(n+" ");
+        pip(n-1);
+        System.out.print(n+" ");
+    }
+}
+
+ */
+/*
+Q. Tower of hanoi.
+ */
+/*
+public class recursion {
+    public static void main(String[] args) {
+        hanaoi(3,'A','B','C');
+    }
+    public static void hanaoi(int n,char A, char B,char C){
+        if(n==0) return;
+        hanaoi(n-1,A,C,B);
+        System.out.println(A+"->"+B);
+        hanaoi(n-1,B,A,C);
+    }
+}
+
+ */
 
 
 
